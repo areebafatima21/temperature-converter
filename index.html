@@ -1,0 +1,1694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="/path/to/a.js"></script>
+    <p id="demo"></p>
+    <p id="qz"></p>
+    <p id="wz"></p>
+    <p id="ez"></p>
+    <p id="rz"></p>
+    <p id="tz"></p>
+    <p id="yz"></p>
+    <p id="uz"></p>
+    <p id="iz"></p>
+    <p id="oz"></p>
+    <p id="pz"></p>
+    <p id="az"></p>
+    <p id="sz"></p>
+    <p id="dz"></p>
+    <p id="fz"></p>
+    <p id="gz"></p>
+    <p id="hz"></p>
+    <p id="jz"></p>
+    <p id="kz"></p>
+    <p id="lz"></p>
+    <p id="xz"></p>
+    <p id="cz"></p>
+    <p id="vz"></p>
+    <p id="bz"></p>
+    <p id="vz"></p>
+    <p id="nz"></p>
+    <p id="mz"></p>
+    <p id="qm"></p>
+    <p id="ass"></p>
+    <p id="em"></p>
+    <p id="rm"></p>
+    <p id="tm"></p>
+    <p id="ym"></p>
+    <p id="um"></p>
+    <p id="im"></p>
+    <p id="om"></p>
+    <p id="pm"></p>
+    <p id="am"></p>
+    <p id="sm"></p>
+    <p id="dm"></p>
+    <p id="fm"></p>
+    <p id="gm"></p>
+    <p id="hm"></p>
+    <p id="km"></p>
+    <p id="lm"></p>
+    <p id="zm"></p>
+    <p id="cm"></p>
+    <p id="vm"></p>
+    <p id="bm"></p>
+    <p id="nm"></p>
+    <p id="mm"></p>
+    <p id="qa"></p>
+    <p id="wa"></p>
+    <p id="ea"></p>
+    <p id="ra"></p>
+    <p id="ta"></p>
+    <p id="ya"></p>
+    <p id="ua"></p>
+    <p id="ia"></p>
+    <p id="oa"></p>
+    <p id="pa"></p>
+    <p id="sa"></p>
+    <p id="da"></p>
+    <p id="fa"></p>
+    <p id="ga"></p>
+    <p id="ha"></p>
+    <p id="ja"></p>
+    <p id="ka"></p>
+    <p id="la"></p>
+    <script>
+        let a = 5
+        let b = 90
+        document.getElementById("demo").innerHTML = a + b;
+        //START WITH
+        let x1 = "hello world im here";
+        let newx1 = x1.startsWith("hello");
+        document.getElementById("qz").innerHTML = newx1;
+        let x2 = "hello world knew"
+        let newx2 = x2.startsWith("world");
+        document.getElementById("wz").innerHTML = newx2;
+        //adding index to stat value for access
+        let x3 = "hello world knew"
+        let newx3 = x3.startsWith("world", 6);
+        document.getElementById("ez").innerHTML = newx3;
+        //ends with agar value given value pr end hourhi
+        let x4 = "hello world the universe"
+        let newx4 = x4.endsWith("universe");
+        document.getElementById("rz").innerHTML = newx4;
+        let x5 = "hello world the, universe";
+        let newx5 = x5.endsWith("the", 15);
+        document.getElementById("tz").innerHTML = newx5;
+        //TEMPLATE STRING ` BACKTICKS STRING WRITTEN IN ` STRING TEMPLATE
+        let backtik = `hello world`;
+        let newback = `back's is huuu"`;//MULTILINE STRING
+        let multiline = `the quick
+        way to jump `
+        document.getElementById("yz").innerHTML = backtik + newback + multiline;
+        //interpolation makes it asy to join add string var expression just by adding placholders
+        //template literal a string with ` backtiks placeholders joing values witout ++ syntax ${}
+        let x6 = "john";
+        let newx6 = "does";
+        let final6 = `welcome ${x6}, ${newx6}`;
+        document.getElementById("uz").innerHTML = final6;//EXPRESSION
+        let price = 10;
+        let VAT = 0.25;
+        let total = `TOTAL ${(price * (1 + VAT)).toFixed(2)}`;
+        document.getElementById("iz").innerHTML = total;
+        //HTML TEMPLATE 
+        let header = "TEMPLATE STRING";// heading and array formed using java 
+        let tags = ["template string", "javascript", "string"]// now uh want it in html used template string
+        //      to join multiple values use loop to taste each flavour from choc box Then
+        // after tasting make a list of each html item of the taste flavour from choc box
+        let html = `<h1>${header}</h1> <ul>`;
+        for (const x of tags) {
+            html += `<li>${x}</li>`
+        };
+        html += `</ul>`;
+        document.getElementById("oz").innerHTML = html;
+        //JAVASCRIPT NUMBERS
+        let x7 = 123e5;
+        let newx7 = 123e-5;
+        document.getElementById("pz").innerHTML = newx7 + "<br>" + x7;
+        //FLOATING NUMBERS
+        let x8 = 0.2 + 0.1;
+        let newx8 = (0.2 * 10 + 0.1 * 10) / 10;
+        document.getElementById("az").innerHTML = x8 + "<br>" + newx8;
+        //adding numbers with line
+        let x9 = 10;
+        let newx9 = 90;
+        document.getElementById("sz").innerHTML = "the result is" + x9 + " " + newx9;
+        //dividing numbers changing string into numb
+        let x10 = "100";
+        let newx10 = "10";
+        document.getElementById("dz").innerHTML = x10 / newx10;
+        //NAN NOT A NUMBER WILL RESULT IN NAN
+        let x11 = 100 / "apple";
+        let newx11 = "100" + NaN
+        document.getElementById("fz").innerHTML = newx11 + typeof NaN;
+        //Hexadecimal base 16
+        let x12 = 0xee;
+        document.getElementById("gz").innerHTML = x12;
+        //TOstring is used to change value of 5 into five '(string)' all values bolean and array'
+        //numeral systems with their base
+        let newx12 = 32;
+        document.getElementById("hz").innerHTML = "Hexatrigesimal (base 36): " + newx12.toString(36) +
+            "octal (base 8): " + newx12.toString(8) + "binar base 2 " + newx12.toString(2);
+        //creating a new object number
+        let x13 = 40;
+        let newx13 = new Number(40);
+        document.getElementById("jz").innerHTML = (x13 == newx13);
+        //BIGINT TO WRITE BIG NUMBERS
+        let x14 = 999999999999999;
+        let newx14 = BigInt("9999999999999999999999999999999");
+        document.getElementById("kz").innerHTML = x14 + "<br>" + newx14;
+        //BIGINT USE OPERATORS
+        let x15 = 9999999999999999999n;
+        let newx15 = 9999494949494949n;
+        document.getElementById("lz").innerHTML = x15 * newx15;
+        //BIGINT DIVIDE
+        let x16 = 5n;
+        let newx16 = Number(x16) / 2;
+        document.getElementById("xz").innerHTML = newx16;
+        //numeral systems b bigint numbers
+        let hex = 0x2000000000000003n;
+        let oct = 0o4000000000000004n;
+        let bin = 0b1000000000000001n;
+        document.getElementById("cz").innerHTML = hex + "<br>" + oct + "<br>" + bin;
+        //INTEGER PRECISION ACUURATE HOUNA ROUND OFF
+        let x17 = 9007199254740992 === 9007199254740993;
+        document.getElementById("cz").innerHTML = x17;
+        //MAX INTEGER PLUS WHOLE NUMBER
+        let newx17 = Number.MAX_SAFE_INTEGER;
+        let x18 = Number.MIN_SAFE_INTEGER;
+        document.getElementById("vz").innerHTML = newx17 + "<br>" + x18;
+        //NUMBER IS INTEGER RETURNS IF NUMBER IS WHOLENUMBER
+        let newx18 = 10;
+        let newsx18 = 10.5
+        document.getElementById("bz").innerHTML = Number.isInteger(10) + "<br>" + Number.isInteger(10.5);
+        //double numbers bht saray numbers - SAFE INTEGERS MTLB VALUE MAI KOI CHANGE NH AIYAY GA AGR WOH NUMBERS USI RANGE MAI HUY
+        document.getElementById("vz").innerHTML = Number.isSafeInteger(10) + "<br>" + Number.isSafeInteger(10999995);
+        //NUMBER METHODS (TO STRING CHANGES STRING TO NUMBER)
+        let x19 = "123";
+        document.getElementById("nz").innerHTML = x19.toString() + "<br>" + (100 + 23).toString() + "<br>" + (123).toString();
+        //TO EXPONENTIAL SCIENTIFIC NOTATION
+        let newx19 = 9.656;
+        document.getElementById("mz").innerHTML = newx19.toExponential() + "<br>" + newx19.toExponential(2) + "<br>" + newx19.toExponential(4) + "<br>" + newx19.toExponential(6);
+        //TO FIXED DECIMAL POINTS
+        let x20 = 9.5656;
+        document.getElementById("qm").innerHTML = x20.toFixed(0) + "<br>" + x20.toFixed(3) + "<br>" + x20.toFixed(7);
+        //TOprecison exact length
+        let newx20 = 9.56455;
+        document.getElementById("wm").innerHTML = newx20.toPrecision() + "<br>" + newx20.toPrecision(3) + newx20.toPrecision(5);
+        //VALUE OF METHOD RETURNS PRIMITIVE VALUE
+    </script>
+    <script>
+        let x21 = 123;
+        document.getElementById("ass").innerHTML = x21.valueOf() + "<br>" +
+            (123).valueOf() + "<br>" +
+            (100 + 23).valueOf();
+        //MATH.RANDOM NUMBER GIVES RANDOM NUMBER EQUAL OR GREATER THAN 0 BUT NOT GREATER THAN 1
+        let newx21 = Math.random();
+        document.getElementById("em").innerHTML = newx21;
+        let x22 = Math.random() * 20;
+        document.getElementById("rm").innerHTML = x22;
+        //MATH.FLOOR ROUND OF THE NUMBER
+        let newx22 = Math.floor(Math.random() * 10);
+        document.getElementById("tm").innerHTML = newx22;
+        //MATH RANDOM NUMBER BETWEEN 0 100
+        let x23 = Math.floor((Math.random() * 100) + 1);
+        document.getElementById("ym").innerHTML = x23;
+        //ceil rounds integer number to nearest number
+        let newx23 = Math.ceil(9.7);
+        let newxs23 = Math.ceil(-5.9)
+        document.getElementById("um").innerHTML = newx23 + "<br>" + newxs23;
+        //TERNARY OPERATOR SIMPLE WAY TO WRITE IF ELSE STATEMENT 3 OPERANDS 
+        let x24 = 20;
+        let newx24 = (x24 >= 18) ? "yes" : "no";
+        document.getElementById("im").innerHTML = newx24;
+        let islocked = true;
+        nolocked = islocked ? "yess its locked" : "no its locked";
+        document.getElementById("om").innerHTML = nolocked;
+        //else if statements are added after if  to check many conditions
+        let season = 'summer';
+        if (season === 'winter') { document.getElementById("pm").innerHTML = 'its very cold weather' }
+        else if (season === 'spring') { document.getElementById("pm").innerHTML = "its spring" }
+        else if (season === 'summer') { document.getElementById('pm').innerHTML = "its summer season" }
+        else {
+            document.getElementById("pm").innerHTML = "invalid season"
+        };
+        //SWITCH STATEMENT
+        let daysOfWeek = "tuesday";
+        switch (daysOfWeek) {
+            case "monday":
+                document.getElementById("am").innerHTML = "it's monday week";
+                break;
+            case "tuesday":
+                document.getElementById("am").innerHTML = "its tuesday";
+                break;
+            case "wednesday":
+                document.getElementById("am").innerHTML = "its wed";
+                break;
+            default: "its not any week";
+        }
+        //MAGIC EIGHT BALL
+        let userName = '';
+        userName ? document.getElementById("sm").innerHTML = `hello, ${userName}` : document.getElementById("sm").innerHTML = `hello!`;
+        let userQuestion = "what's my age?";
+        document.getElementById("dm").innerHTML = userQuestion;
+        const randomNumber = Math.floor(Math.random() * 8);
+        let eightBall = '';
+        switch (randomNumber) {
+            case 0: eightBall = "its not the right name";
+                break;
+            case 3: eightBall = "you name is okay"; break;
+            case 6: eightBall = "hooray you can do it"; break;
+            case 7: eightBall = "nice namee"; break;
+            default: eightBall = "sorry your name is not good"; break;
+        }
+        document.getElementById("fm").innerHTML = `magic eight ball say ${eightBall}`;
+        //FUNCTION USED TO WRIE A SAME SODE ONE TIME
+        function greetMe() {
+            return "hello how are you"
+        };//giving thankyou message to 4 customers
+        document.getElementById("gm").innerHTML = greetMe();
+        document.getElementById("hm").innerHTML = greetMe();
+        document.getElementById("km").innerHTML = greetMe();
+        //thankou messasge to cutomer with name
+        function message(name) {
+            return `thankyou for your ${name} shooping `
+        }
+        document.getElementById("lm").innerHTML = message('cole');
+        //EFAULT PARAMETERS WHEN THER IS NO VALUE IN FUNCTION
+        function greeting(nam = 'Stranger') {
+            return `hello ${nam} this is my greet`
+        };
+        document.getElementById("zm").innerHTML = greeting("kat");
+        //HELPER FUNCTION WHEN YOU DON'T WANT TO WRIT CODE MULTIPLE TIMES
+        function isEven(number) {
+            return number % 2 === 0;
+        }
+        var myNumber = 7;
+        if (isEven(myNumber)) {
+            document.getElementById('cm').innerHTML = `${myNumber} its even number`;
+        } else {
+            document.getElementById('cm').innerHTML = `${myNumber} not an even number`;
+        }
+        //FUNCTION EXPRESSIONS
+        const greeti = function (item1) { document.getElementById('vm').innerHTML = `the ${item1} is not here mam` };
+        greeti('APPLES');
+        //ARROW FUNCTION 
+        let planstDays = (day) => {
+            if (day === 'Wednesday') {
+                return "its wednesday"
+            } else {
+                return "no its not tuesay "
+            }
+        };
+        document.getElementById('bm').innerHTML = planstDays('monday');
+        //ROCK PAPER SCISSORS
+        const getUserChoice = (userInput) => {
+            userInput = userInput.toLowerCase();
+            if (userInput === "rock" || userInput === "paper" || userInput === "scissors") {
+                return userInput
+            } else { return 'error' }
+        };
+        const getComputerChoice = () => {
+            const randomNumber = Math.floor(Math.random() * 3);
+            switch (randomNumber) {
+                case 0:
+                    return "paper";
+                case 1:
+                    return "rock";
+                case 2:
+                    return "scissors";
+                default:
+                    return "error";
+            }
+        };
+        document.getElementById("nm").innerHTML = getComputerChoice();
+        const determineWinner = (userChoice, computerChoice) => {
+            if (userChoice === computerChoice) {
+                return 'game was a tie';
+            }
+            if (userChoice === "rock") {
+                if (computerChoice === "paper") {
+                    return "computer won";
+                } else {
+                    return "congrats you won";
+                }
+            }
+            if (userChoice === "paper") {
+                if (computerChoice === "scissors") {
+                    return "sorry computer won"
+                } else {
+                    return "congrats you won"
+                }
+            }
+            if (userChoice === "scissors") {
+                if (computerChoice === "paper ") {
+                    return "sorry computer won"
+                } else {
+                    return "congrats you won"
+                }
+            }
+        };
+        const playGame = () => {
+            var userChoice = getUserChoice("paper");
+            var computerChoice = getComputerChoice();
+            document.getElementById("qa").innerHTML = `you threw ${userChoice}`;
+            document.getElementById("wa").innerHTML = `the computer threw ${computerChoice}`;
+            document.getElementById("ea").innerHTML = determineWinner(userChoice, computerChoice);
+        }
+        playGame();
+        //ARRAY a list with items shooping list with items when you want items from list you write array name and if you want one letter than list[]
+        let list = ['coffe bun banaa', 'apple amazon kick', 'milk coffee tea'];
+        let newList = list[1];
+        document.getElementById("ra").innerHTML = newList;
+        //length of array chococlate box array hua andar ki choclates items length on box written
+        let choc = ['new yaer', 'happy new year'];
+        let newchoc = choc.length;//number of items
+        newchoc = choc[0].length;//number of strings
+        document.getElementById('ta').innerHTML = newchoc;
+        //push method add items to list in shopping list
+        let shopping = ['clean fridge', 'happy month'];
+        shopping.push('clean wall', 'clean mirror');
+        document.getElementById('ya').innerHTML = shopping;
+        //pop method used to remove last item top book remove
+        let books = ['hollen', 'vojd', 'samntha', 'vijay'];
+        const removedbooks = books.slice(-2);
+        document.getElementById('ua').innerHTML = books + "<br>" + removedbooks;
+        //shift array remove first element from array
+        let x25 = ['apple', 'banana', 'orange', 'kiwi'];
+        //x25.shift();//add popcorn to list use unshift
+        //x25.unshift('popcorn')
+        const newx25 = x25.slice(1, 3);
+        document.getElementById('ia').innerHTML = newx25;
+        //function array
+        let x26 = ['apple', 'banana', 'kiwi'];
+        function addaray(arr) {
+            arr.push('khajoor');
+        }
+        addaray(x26);
+        document.getElementById('oa').innerHTML = x26;
+        //outer array inner aray nested array [1,2] is 01 inner outer at index 0
+        //Secret Message array
+        let secretMsg = ['fruit', 'kiwi', 'jello', 'minions', 'ola', 'bottom', 'hukum', 'quit']
+        secretMsg.pop();
+        secretMsg.push('Program');
+        secretMsg[5] = 'hahaha';
+        secretMsg.shift();
+        secretMsg.unshift('programming');
+        secretMsg.splice(3, 4, 'minions 4');//join is used to make array a sentence
+        document.getElementById('pa').innerHTML = secretMsg.join(' ');
+        //splice method to remove add delete elements
+        //FOR LOOP 3 PARTS DECLAR STOPING CONDITION ITERATOR ++
+        for (let counter = 5; counter < 11; counter++)
+            document.getElementById('sa').innerHTML = counter;
+        //BACKWARD FOR LOOP -- 
+        for (let count = 3; count >= 0; count--)
+            document.getElementById('da').innerHTML = count;
+        //LOOPING THROUGH ARRAYS
+        let vacations = ['bali', 'india', 'gynaa', 'heramm'];
+        for (let i = 0; i < vacations.length; i++) {
+            document.getElementById('fa').innerHTML = 'i would like to go to ' + vacations[i] + '<br>';
+        }
+        //NESTED LOOP USED FOR COMPARING THE VALUES OF 2 LIST
+        let saleProduct = ['smartphone', 'tablets', 'iphone'];
+        let wishList = ['butter', 'pad', 'iphone'];
+        for (let i = 0; i < saleProduct.length; i++) {
+            for (let k = 0; k < wishList.length; k++) {
+                if (saleProduct[i] === wishList[k]) {
+                    document.getElementById("ga").innerHTML = 'both have commmon product ' + wishList[k];
+                }
+            }
+        }
+        //WHILE LOOP runs AS LONG IS THE GIVEN CONDITION IS TRUE INCREMENT HOTA REHTA HAI JESI CON FALSE HOTI HAI IT STOP
+        const cards = ['diamond', 'spade', 'heart', 'club'];
+        let currentCard = 'diamond';
+        while (currentCard !== 'spade') {
+            currentCard = cards[Math.floor(Math.random() * 3)];
+
+            console.log(currentCard);
+            document.getElementById('ha').innerHTML = currentCard;
+        }
+        //DO WHILE runs the code block first and then check the condition even its false
+        let k = 10;
+        do {
+            document.getElementById('ja').innerHTML = k;
+        } while (k < 5);
+        //DO WHILE DO PART TELLS THE PROGRAMM TO DO RUN THE PROGRAM ATLEAST ONCE NO MATTER WHAT
+        let cupsOfSugarNeeded = 0;
+        let cupsAdded = 0;
+        do { (document.getElementById('ka').innerHTML = cupsAdded); cupsAdded++; } while (cupsAdded < cupsOfSugarNeeded);
+        //BREAK STATEMENT IN LOOP USED TO EXIT A CODE AFTER THE CONDITION IS MET
+        let rapperArray = ['fruits', 'money', 'chocolate', 'kinder']; //to log each elem used loop
+        for (let i = 0; i < rapperArray.length; i++) {// declare satement iteration if state rbeak the loop no matte rwhat
+            if (rapperArray[i] === 'chocolate') {
+                break;
+            }//current element of array with index var
+            document.getElementById('la').innerHTML += rapperArray[i] + "<br>";
+        }
+        //WHALE TALK
+        let input = "hello im dolphin";
+        const vowels = ['a', 'e', 'i', 'o', 'u'];
+        let resultArray = [];
+        for (let i = 0; i < input.length; i++) {
+            if (input[i] === 'e') {
+                resultArray.push(input[i]);
+            }
+            if (input[i] === 'o') {
+                resultArray.push(input[i]);
+            }
+            //console.log(`input is ${i}`);
+            for (let k = 0; k < vowels.length; k++) {
+                // console.log(`vowels index is ${k}`);
+                if (input[i] === vowels[k]) {
+                    //  console.log(vowels[k]);
+                    resultArray.push(input[i]);
+                }
+            }
+        }
+        // console.log(resultArray); JOIN SAY ARRAY STRING BNGYA no comma needed to write multiple methods
+        let resultString = resultArray.join(' ').toLocaleUpperCase();
+        console.log(resultString);
+        //FUNCTIONS AS DATA 
+        const checkThatTwoPlusTwoEqualsFourAMillionTimes = () => {
+            for (i = 1; i <= 100000; i++) {
+                if (2 + 2 != 4) {
+                    console.log('something is wrong');
+                }
+            }
+        };
+        const isPlusTwo = checkThatTwoPlusTwoEqualsFourAMillionTimes;
+        isPlusTwo();
+        console.log(isPlusTwo.name);
+        //HIGHER ORDER FUNCTION
+        function filterAnimals(animalList, filterCallBack) {
+            let result = [];
+            for (let i = 0; i < animalList.length; i++) {
+                if (filterCallBack(animalList[i])) {
+                    result.push(animalList[i]);
+                }
+            } return result;
+        }
+
+        let animals = ['dog', 'cat', 'dog', 'owl', 'cat'];
+        let cats = filterAnimals(animals, function (animal) {
+            return animal === 'cat';
+        });
+        console.log(cats);
+        //RETURN IN FUNCTION
+        function addSum(num, mum) {
+            let mii = num + mum;
+            return mii;
+        };
+        let extra = addSum(500, 90);
+        console.log(extra);
+        //arrow function
+        let print = () => {
+            console.log('hello');
+        }
+        function myFunction(num) {
+            return "aeiou";
+        }
+        let cuteFunction = (num) => {
+            return "a,e,i,o,u";
+        }
+        //HIGH order FUNCTION
+        function proceedOrder(orderfunction) {
+
+            orderfunction()
+        };
+        function orderbrownie() {
+            console.log('order brownie');
+        }
+        function ordercookies() {
+            console.log('ordercookies');
+        }
+        proceedOrder(ordercookies);
+        proceedOrder(orderbrownie);
+        //HIGHER ORDER FUNCTION
+        function processGrades(items, gradeFunction) {
+            console.log('grades');
+        }
+        function addFiveToGrade() {
+            items() + 5
+        }
+        function subtractThreeFromGrade() {
+            array.forEach(element => {
+
+            });
+        }
+        processGrades(addFiveToGrade(items))
+        //FOR EACH LOOP
+        let kitu = [1, 2, 6, 7, 8, 9, 3];
+        let calculate = (num) => {//callbACK KOU pass kia h
+            console.log(num * num);//for each ka method utha kr paste kia or argu pass krdiya
+        };
+        kitu.forEach(calculate);
+        // let kitu = [1, 2, 6, 7, 8, 9, 3];
+
+        // kitu.forEach((koui) => {
+        //     console.log(koui * koui);
+        // };)
+        //FOR EACH
+        let foodi = ['bread', 'rice', 'daal'];//high order function bnaya elements kou callback parameter bnay or phr ussy hee function bna kr call kia
+        foodi.forEach((foods) => {
+            console.log(foods);
+        });
+        //MAPS IN JS SAME METHOD AS FOR EACH DECLARE A VAR TO IT FOR WORKING
+        let meal = ['pasts', 'lunch', 'korma'];
+        let newmeals = meal.map((khana) => {
+            console.log(khana);
+        })
+        //FILTER METHOD chai ki patti chan lena
+        let tea = [2, 3, 4, 6, 5, 8];
+        tea.filter((element) => {
+            return element % 2 === 0
+        });
+        console.log(tea)
+        //CALLBACK FUNCTION
+        let cup = (num) => {
+            return num
+        }
+        cup(90);
+        function hats() {
+            console.log('hello world');
+        }
+        function abc(hats) {
+            return hats
+        }
+        abc(hats);
+        //FOR EACH
+        let arrs = [2, 3, 4, 5, 5];
+        function prints(el) {
+            console.log(el);
+        }
+        arrs.forEach(prints);//or we can write the full function
+        arrs.forEach(function (el) { console.log(el) });
+        //OBJECTS IN ARRAY METHOD FUNCTIONS CALLBACK
+        let newArrs = [{
+            name: "aman",
+            date: 90,
+        }, {
+            name: 'kusha',
+            date: 80,
+        }, {
+            name: "vinod",
+            date: 40,//now we want to turn marks into gpa
+        }];
+        let gpa = newArrs.map((el) => {
+            return el.marks / 10;
+        })
+        // newArrs.forEach((date)=>{console.log(date);
+
+        // });
+        //MAP METHODS
+        let apple = [2, 4, 4, 6];
+        let applejiuce = apple.map((el) => { return el % 3 });
+        //EVERY METHOD checks all the elements i f one doesnt meet condition its false
+        let drink = [23, 40, 67];
+        let checkAge = drink.every((num) => {
+            return num >= 21;
+        }); console.log(checkAge);
+        //SOME METHOD IS LIKE OR ELSE DETECTIVE IN GROUP OF SUSPECTS WITH DESCRIPTION I F EVEN ONE PERSON MATCHES THE DESCRIP IT RETURNS TRUE
+        let detect = [18, 21, 22, 45];
+        let someOlderAge = detect.some((num) => {
+            return num >= 18;
+        })
+        console.log(someOlderAge);
+        //REDUCED FUNCTION
+        let red = [1, 2, 3, 4];//plus the value from 0 by default+1
+        let newred = [red.reduce((result, el) => (result + el))];
+        console.log(newred);//gives the reduced value
+        //FINDING A MAXIMUM VALUE IN A LIST
+        // let soccer=[10,5,12,4,7];
+        // let max=-1;
+        // for(i=0;i<soccer.length;i++){
+        //     if(max<soccer[i]){
+        //         max=arr[i];
+        //     }
+        // }
+        // console.log(max)
+        //reduce FUNCTION 0 1 may sy kn bara 1 1 5 may sy kn bara 5 CAN TAKE SEC ARGUMENT ALSO TO ADD
+        let soccer = ['1', '5', '7', '9', '12'];
+        let max = -1;
+        let ans = soccer.reduce((result, el) => {
+            if (result < el) {
+                return el
+            } else { return max }
+        })
+        console.log(ans);
+        //PRACTISE used to find lowest price products by pressing function
+        let multiple = [10, 30, 50];
+        // multiple.every((num)=>{ multiples of 10
+        //     return num%10===0;
+        // });
+        // console.log(multiple); min value find now creat it as function
+        function minValue(multiple) {
+            let min = multiple.reduce((result, el) => {
+                if (result > el) {
+                    return el
+                } else return result
+            });
+            return min
+        };
+        minValue(multiple);
+        // let min=multiple.reduce((result,el)=>{
+        //     if(result>el){
+        //         return el
+        //     }else return result
+        // });
+        // console.log(min);
+        //FIND INDEX METHOD TO FIND THE APPLE NAME FRUIT IN LIST AND ITS POSITION 
+        let fruiti = ['apple', 'banan', 'kiwi', 'jamun'];
+        let grocc = fruiti.findIndex((num) => {
+            return num[0] === 'k'
+        })
+        console.log(grocc);
+        //CHAIN TWO METHOS
+        let dums = [2, 4, 5, 6];
+        let double = dums.map((nums) => { return nums * 2 });
+        double.forEach((dbnum) => { console.log(dbnum) });
+        //CALLBACK FUNCTION REMOTE AND BUTTONS
+        function remote(buttons) { //remote is function itself and button is callback it doesn't print anyhting its duty is just to call this function channel change krna
+            buttons("channel 1")
+            buttons(2)
+            buttons(3)
+        };
+        function buttons(sentence) {//button kou press krny ky bd kia prnit houga
+            console.log(sentence);
+        }
+        remote(buttons);//calling the remote with channel changing
+        //SET TIME OUT METHOD
+        setTimeout(function () {
+            console.log('hello world');
+        }, 3000);
+        // console.log('setTimeout()'); timer va;ue 2 will print after 2 secs
+        // console.log('hello one'); setTimeout(function (){
+        //     console.log('hello 2');
+        // },4000); console.log('hello 3');
+        function greetings() {
+            console.log('hello' + value + '!');
+        }
+        setTimeout(greeting, 3000, 'john');
+        //PROMISES IN JS
+        const roomClean = new Promise((resolve, reject) => {
+            const willItWork = true;
+            if (willItWork) {
+                resolve('operation suceeded!')
+            } else {
+                reject("operation failed")
+            }
+        });
+        roomClean.then((message) => {
+            console.log(message);
+        }).catch((error) => {
+            console.error(error);
+
+        });
+        //PROMISE EG 2
+        let promise = new sold((reject, resolve) => {
+            setTimeout(() => {
+                resolve('SUCESS');
+                reject(new Error('FAILED'));
+            }, 3000);
+        });
+        promise.then((value) => {
+            console.log(value);
+        }).catch((error) => {
+            console.error(error);
+        });
+        //OBJECT NAME OF PERSON WITH PROPERTY
+        let spaceShip = {
+            color: 'silver',
+            'Fuel type': 'turbp'
+        };
+        console.log(spaceShip);
+        //ACCESSING PROPERTY OF OBJECT 
+        spaceShip.color;
+        //adding or deletin or re asigginning property to obj
+        spaceShip.color = 'blue';
+        delete spaceShip.color;
+        //METHODS AS FUNCTION IN OBJECT TO PRINT LARGE MESSAGE INSTEAD OF KEY
+        let alienShip = {
+            invade: function () {
+                console.log('We no longer wish to conquer your planet. It is full of dogs, which we do not care for');
+            }
+        };//calling the key value property 
+        alienShip.invade();
+        //NESTED OBJECTS
+        let student = {
+            firstname: 'kushr',
+            lastname: 'kuhnb',
+            country: 'haryan',
+            exams: {
+                date: '2044'
+            }
+        };
+        console.log(student.exams.date);
+        //PASS BY REFERNCE MTLB ORGINAL OBJECT KOU CHANGE KRNA WHEN USED WITH FUNCTION EXAMPLE YOU WANT TO PAINT IT
+        let spaceShips = {
+            'Fuel Type': 'turbo fuel',
+            hoePlanet: 'Earth'
+        };
+        function greenEnergy(obj) {
+            obj['Fuel Type'] = 'avacado oil';
+        }
+        function remoteDisabled(obj) {
+            obj.disabled = true;
+        }
+        greenEnergy(spaceShips);
+        remoteDisabled(spaceShips);
+        console.log(spaceShips);
+        //FOR LOOP IN 
+        let alieShip = {
+            crew: {
+                pilot: { name: 'Alice', age: 20 },
+                copilot: { name: 'JOHN', age: 30 },
+                navigator: { name: 'lola', age: 90 },
+            }
+        }
+        for (let crewMember in alieShip.crew) {
+            console.log(`${crewMember}:${alieShip.crew[crewMember].name}`)
+        };
+        //ADVANCED OBJECTS USING .THIS REFERS TO CURRENT OBJ PROPERTY 
+        let robot = {
+            model: '123j4',
+            energyLevel: 'full',
+            provideInfo: () => {
+                return `I am ${this.model} and my current energy level is${this.energyLevel}.`
+            }
+        }
+        console.log(robot.provideInfo());
+        //PRIVACY IN BANK OBJ
+        const bank = {
+            _money: 1000,
+        }
+        bank._money = 0;//ADD PRIVACY BY _UNDERSCORE used getter or setterv
+        const banks = {
+            _money: 1000,
+
+            get() {
+                return this._money;
+            },
+            set(amount) {
+                if (amount > 0) {
+                    this._money = amount;
+                } else {
+                    console.log("your money snatxhed")
+                };
+                console.log(this.get())
+                this.set(5000);
+            },
+        };
+        console.log(banks.get());
+        banks.set(5000);
+        console.log(banks.get());
+        //SETTER METHOD
+        const person = {
+            _age: 20,
+            set age(newAge) {
+                if (typeof newAge === "number") {
+                    this.age = newAge;
+                } else {
+                    console.log('this is not a required amount');
+                }
+            }
+        };
+        person.age = 40
+        console.log(person._age);
+        //FACTORY FUNCTION
+        const robotFactory = (model, mobile) => {
+            return {
+                model: model,
+                mobile: mobile,
+                beep() {
+                    console.log('beep bop')
+                }
+            }
+        };
+        const tinCan = robotFactory('P-4500', true);
+        tinCan.beep();
+        //DESTRUCTURING PROPERTY
+        const vampire = {
+            name: 'dracula',
+            residence: 'hotel translivia',
+            perfernce: {
+                day: "inside",
+                night: 'oustside'
+            },
+        };
+        const { residence } = vampire;
+        const { day } = vampire.perfernce;
+        console.log(day);
+        console.log(residence);
+        //BUILT IN OBJECTS methods
+        const robots = {
+            mode: 'p394',
+            gender: 'male',
+            production: 'italy',
+            built: 'newzeland',
+            find: 'astronout',
+            made: 45,
+            value: true
+        }; //acess value keys acees pairs acess ame object with two added values
+        const robotKeys = Object.keys(robots);
+        const pairs = Object.entries(robots);
+        const newRobot = Object.assign({ land: 'hella', date: 2034 }, robots);
+        console.log(robotKeys);
+        console.log(pairs);
+        console.log(newRobot);
+        //Meal maker
+        let menu = {
+            _meal: '',
+            _price: 0,
+            set meal(mealChecker) {
+                if (typeof mealChecker === 'string') {
+                    return this._meal = mealChecker;
+                }
+            },
+            set price(priceChecker) {
+                if (typeof priceChecker === 'number') {
+                    return this._price = priceChecker;
+                }
+            },
+            get todaysSpecial() {
+                if (this._meal && this._price) {
+                    return `todays special ${this._meal} is for ${this._price}`;
+                } else {
+                    return 'no meals on special sale';
+                }
+            }
+        };
+        menu._meal = 'chicken';
+        menu._price = 89;
+        console.log(menu.todaysSpecial);
+        //CLASSES IN JS
+        let halley = {
+            _name: 'halley',
+            _behaviour: 0,
+
+            get name() {
+                return this._name;
+            },
+            get behaviour() {
+                return this._behaviour;//it shows that we are acessing directly but behind the scens it calls the function
+            },
+            //increment in behavour call function it will not return just add +1
+            incrementBehaviour() {
+                this._behaviour++
+            },
+        };
+        console.log(halley.name);
+        console.log(halley.behaviour);
+        halley.incrementBehaviour();
+        console.log(halley.behaviour);
+        //CLASSES AND OBJECTS class strarts with cap no= 
+        class Dog {
+            constructor(name) {
+                this._name = name; //constructor is function with para and new obj refers to this new obj value
+                this._behaviour = 0;
+            }
+            get name() {  //we dont have commas in list to seprate qualities it has () methods
+                return this._name;
+            }
+            get behaviour() {
+                return this._behaviour
+            }
+            increment() {
+                this._behaviour++
+            }
+        };
+        const newToy = new Dog('halley'); //new keyword for object class name and new name of obj
+        console.log(newToy.behaviour);
+        console.log(newToy.name);
+        newToy.increment();
+        console.log(newToy.behaviour);
+        console.log(newToy.name);
+        //INHERITENCE SUPER FUNCTION TELLS TO WRTIE THE PROPERTIES OF ANIMAL EXTEND
+        class Animal {
+            constructor(name) {
+                this._name = name,
+                    this._behaviour = 0
+            };
+            get name() {
+                return this._name;
+            }
+            get behaviour() {
+                return this._behaviour;
+            }
+            increment() {
+                this._behaviour++;
+            }
+        }
+        class Cat extends Animal {
+            constructor(name, litter) {
+                super(name);
+                this._litter = litter
+            }
+            get litter() {
+                return this._litter;
+            }
+            addfriend(bfname) {
+                this._litter.push(bfname)
+            }
+        };
+        const bryceCat = new Cat('BRYCE', 'niko');
+        console.log(bryceCat._litter);
+        bryceCat.increment();
+        console.log(bryceCat.behaviour);
+        bryceCat.addfriend('bilu');
+        console.log(bryceCat.litter);
+        //Library project
+        class Media {
+            constructor(title) {
+                this._title = title;
+                this._isCheckedOut = false;
+                this._ratings = []
+            }
+            get title() {
+                return this._title;
+            }
+            get isCheckedOut() {
+                return this._isCheckedOut;
+            }
+            get ratings() {
+                return this._ratings;
+            }
+            set isCheckedOut(value) {
+                this._isCheckedOut = value;
+            }
+            toggleCheckOutStatus() {
+                if (this._isCheckedOut === true) {
+                    this._isCheckedOut = false;
+                } else {
+                    this._isCheckedOut = true;
+                }
+            }
+            getAverageRating() {
+                let ratingSum = 0
+                for (let i = 0; i < this.ratings.length; i++) {
+                    ratingSum += this.ratings[i];
+                } //ternay operator with condition 
+                return this.ratings.length > 0 ? ratingSum / this.ratings.length : 0;
+            }
+            addRating(value) {
+                this._ratings.push(value);
+            }
+        }
+        class Book extends Media {
+            constructor(author, title, pages) {
+                super(title);
+                this._author = author;
+                this._pages = pages;
+            }
+            get author() {
+                return this._author;
+            }
+            get pages() {
+                return this._pages;
+            }
+        }
+        let newBook = new Book('tommy', 'the short story', 600);
+        newBook.toggleCheckOutStatus();
+        console.log(newBook.isCheckedOut);
+        newBook.addRating(3);
+        newBook.addRating(8);
+        newBook.addRating(5);
+        console.log(newBook.getAverageRating());
+        class CD extends Media {
+            constructor(artist, title, songs) {
+                this._artist = artist;
+                this._songs = songs || []
+            }
+            get artist() {
+                return this._artist;
+            }
+            get songs() {
+                return this._songs;
+            }
+            addSongs(song) {
+                this._songs.push(song)
+            }
+        }
+        let newCd = new CD('JAMES', 'brandnew', ['newMood']);
+        console.log(newCd);
+        newCd.addSongs('jazz');
+        console.log(newCd.songs)
+        //PROMISE IN JS IS LIKE ANY OTHER FUNCTION
+        const virtualStores = {
+            sunglasses: 400,
+            pants: 90,
+            bags: 29
+        };
+        const myExecutors = (resolve, reject) => {
+            if (virtualStores.sunglasses > 0) {
+                resolve('the sunglasses are in stock');
+            } else {
+                reject('items are sold');
+            }
+        }
+        orderSunglass = () => {
+            return new Promise(myExecutors);
+        };
+        const orderPromise = orderSunglass();
+        console.log(orderPromise);
+        //SET TIME OUT
+        const delayFunction = () => {
+            console.log('hi im delayed')
+        };
+        setTimeout(delayFunction, 3000);
+        //SET TIMEOUT IN PROMISE
+        const alarm = () => {
+            return new Promise(resolve, reject); {
+                setTimeout(() => { resolve('alarm goes off') }, 2000)
+            };
+        };
+        console.log(alarm());
+        //CHAINING PROMISES TOGETHER
+        const { checkInventory, processPayment, shipOrder } = require("library.js")
+        const order = {
+            items: [
+                ["sunglasses", 8],
+                ["bags", 5],
+            ],
+            giftCardBalance: 59.5
+        };
+        checkInventory(order).then((resolved) => {
+            return processPayment(resolved);
+        })
+            .then((resolved) => {
+                return shipOrder(resolved)
+            })
+            .then((successMessage) => {
+                console.log('successMessage');
+            })
+            .then((errorMessage) => {
+                console.log('error');
+            })
+        //SYNC IN JS MEANS CODE IN ORDER COMPLETED ON AFTER ANOTHER
+        console.log('hello');
+        setTimeout(() => {
+            console.log('good bye');
+        }, 5000);
+        //ASYNCHROUS DOESN'T WAIT FOR SET TIME OUT TO WORK 
+        console.log('one');
+        console.log('two');
+        setTimeout(() => {
+            console.log('happy new year');
+        }, 6000);
+        console.log('three');
+        cosole, log('four');
+        //callback jou function kou call krta hai as argument
+        function add() {
+            console.log(3 + 4)
+        };
+        function result(callback) {
+            console.log('the result is');
+            callback();
+        }
+        result(add);
+        //
+        function sum(a, b) {
+            console.log(a + b);
+        }
+        function result(a, b, callback) {
+            callback(a, b);
+        }
+        result(2, 20, sum);
+        //CALL BACK
+        // function data(dataId){
+        //     console.log(`data ${dataId}`);
+        // };
+        //CALL BACK IS LIKE FB IT CHECKS IF USERNAME IS IN DATABASE AND THEN PASS
+        // function data(dataId,nextData){
+        //     setTimeout(()=>{
+        //         console.log(`data ${dataId}`);
+        //        if(nextData){
+        //         nextData();
+        //        } 
+        //     },2000);
+        // };
+        // data(1,()=>{
+        // console.log('getting data 2');
+        //     data(2,()=>{
+        //         console.log('getting data 3');
+        //         data(3)
+        //     })
+        // });
+        //PROMISE
+        let promises = new Promise((resolve, reject) => {
+            console.log('i am a promise');
+            reject('your order is not placed');
+        });
+        // CREATING PROMISE
+        // function data(dataId,nextData){
+        //    return new Promise((resolve,reject)=>{
+        //     setTimeout(()=>{
+        //         console.log(`data ${dataId}`);
+        //         resolve('success')
+        //        if(nextData){
+        //          nextData();
+        //         } 
+        //     },5000);
+        //    })
+        // };
+        //.then promise
+        const numbio = () => {
+            return new Promise((resolve, reject) => {
+                console.log('im promise');
+                resolve('sucess');
+            })
+        };
+        let execute = numbio();
+        promise.then(() => {
+            console.log('here is your answer');
+        });
+        //PROMISE CHAINING
+        function asyncs1() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log('hello 1'); // This should print 'hello' after 6 seconds
+                    resolve('success'); // This resolves the promise with the value 'success'
+                }, 6000); // This sets a timeout of 6000 milliseconds (6 seconds)
+            });
+        }
+        console.log('fetching result')
+        let p2 = asyncs();
+        p2.then(res => {
+            console.log('fetching data 2');
+            let p1 = asyncs2();
+            p1.then(res => {
+            });
+        });
+
+        function asyncs2() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log('hello 2'); // This should print 'hello' after 6 seconds
+                    resolve('success'); // This resolves the promise with the value 'success'
+                }, 6000); // This sets a timeout of 6000 milliseconds (6 seconds)
+            });
+        };
+        //ASYNC FUNCTION
+        function api() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log('the weather');
+                    resolve(200);
+                }, 3000);
+            });
+        }//result kou call krain gaii
+        async function result() {
+            await api();
+            await api();
+        }
+        //
+        const semaa = (id) => {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log('im promise', id);
+                    resolve('sucess');
+                }, 3000);
+            });
+        };
+        (async function () {
+            console.log('getting resu(lt 1');
+            await semaa(1);
+            console.log('getting result 2');
+
+            await semaa(2);
+            console.log('getting result 3')
+            await semaa(3);
+            console.log('getting result 4')
+
+            await semaa(4);
+            console.log('getting result 6')
+
+            await semaa(6);
+        })();
+        // ASYNC
+        function withConstructor(num) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (num === 0) {
+                        resolve('zero');
+                    } else { resolve('not zero') }
+                }, 3000);
+            });
+        }
+        withConstructor(200).then((result) => {
+            console.log(`withConstructor(0) resolved a promise which return to ${result}`);
+        }).catch((err) => {
+            console.log(`${err} we will help you out`);
+        })
+        //ASYNC AWAIT
+        async function chore() {
+            console.log('washing dishes')
+            await washDishes();
+            console.log('washing clothes')
+
+            let washing = await startWashing();
+            console.log('doing vaccum while machine is one')
+
+            await doVaccum();
+            console.log('now fold laundry')
+
+            await foldLaundry();
+            return 'all task done'
+        };
+        chore().then((res) => {
+            console.log(res)
+        });
+        //WRITING ASYNC FUNCTIONS MAGIC BOX TOYS
+        function makeToy() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve('yay your toy is made')
+                }, 3000);
+            });
+        }
+        //two kids who want toys
+        function alice() {
+            let ticket = makeToy();
+            console.log(ticket);
+        };
+        async function Bob() {
+            let toy = await makeToy();
+            console.log(toy);
+        }
+        //ASYNC FUNCTION TO MAKE A SANDWICH
+        async function makeSandwich() {
+            let bread = await getBread();
+            console.log('got the bread');
+            spreadPeanut(bread);
+            let jelly = await getJelly();
+            console.log('got the jelly');
+            spreadJelly(jelly);
+            await makingInmachine();
+            console.log('sandwich is ready')
+        };
+        async function getBread() {
+            await new Promise(resolve => setTimeout(resolve, 3000));
+            return 'bread';
+        }
+        async function getJelly() {
+            await new Promise(resolve => setTimeout(resolve, 3000));
+            return 'jelly';
+        };
+        async function makingInmachine() {
+            await new Promise(resolve => setTimeout(resolve, 3000));
+        };
+        function spreadPeanut(bread) {
+            console.log('spreading peanut butter on bread');
+        }
+        function spreadJelly(jelly) {
+            console.log('spreading jelly on bread');
+        };
+        makeSandwich();
+        //HANDLING DEPENDENT PROMISES
+        const shopBeans = () => {
+            return new Promise((resolve, reject) => {
+                const beanTypes = ['kidney', 'peanut', 'badam', 'granuala', 'nuts'];
+                setTimeout(() => {
+                    let randomIndex = Math.floor(Math.random() * 5);
+                    let beanType = beanTypes[randomIndex];
+                    console.log(`i bought ${beanType} beacuse it was on sale`);
+                    resolve(beanType)
+                }, 1000)
+            })
+        };
+        const soakBeans = (beanType) => {
+            return new Promise((resolve, reject) => {
+                console.log('its time to soak the beans');
+                setTimeout(() => {
+                    console.log(`the ${beanType} is soft now`);
+                    resolve(true);
+                }, 2000);
+            })
+        };
+        const cookBeans = (isSoft) => {
+            console.log('cooking beans');
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (isSoft) {
+                        console.log('the beans are cooked');
+                        resolve('dinner is served');
+                    }
+                }, 2000);
+            })
+        };
+        async function makeBeans() {
+            let type = await shopBeans();
+            let isSoft = await soakBeans(type);
+            let cooking = await cookBeans(isSoft);
+            console.log(cooking);
+        };
+        makeBeans();
+        //HANDLING ERRORS TRY CATCH;
+        try {
+            let file = readFile('myfile.txt');
+
+        } catch (error) {
+            console.log('the error message was found', error.message)
+        };
+        //PROMISE.ALL DOING ALL TASK TOGETHER
+        async function baking() {
+            const resultBaking = await Promise.all([
+                mixDough(),
+                preheatOven(),
+                rollOutdough(),
+
+                addIngredients(),
+
+                cutCookies(),
+            ]);
+            return resultBaking;
+        }
+        async function mixDough() {
+            return new Promise((resolve, reject) => {
+                resolve('mixed')
+            });
+        }
+        async function preheatOven() {
+            return new Promise((resolve, reject) => {
+                resolve('heated')
+            })
+        }
+        async function rollOutdough() {
+            return new Promise((resolve, reject) => {
+                resolve('rollout')
+            })
+        }
+        async function addIngredients() {
+            return new Promise((resolve, reject) => {
+                resolve('added ing')
+            })
+        }
+        async function cutCookies() {
+            return new Promise((resolve, reject) => {
+                resolve('cookies cut');
+            })
+        }
+        async function lastBaking() {
+            const bakedResult = await baking()
+            for (let i = 0; i < bakedResult.length; i++) {
+                console.log(bakedResult[i]);
+            }
+        };
+        //HTTP REQUEST USED TO ASK INFORMATION FROM INTERNET
+        fetch('https://www.codecademy.com/courses/learn-intermediate-javascript/lessons/js-requests-with-fetch-api/exercises/intro-to-fetch-get-requests')
+            .then(respone => {
+                if (respone.ok) {
+                    return respone.text();
+                } else {
+                    throw new Error('network request failed')
+                };
+            })
+            .then(data => {
+                console.log(data);
+            })
+            .catch(error => {
+                console.error('there was something wrong with the request', error);
+            });
+        //POST REQUEST BOOK REVIEW APPLICATION 
+        fetch('https://example.com/submit-book', {
+            method: 'POST',
+            body: JSON.stringify({ title: 'The Great Gatsby', author: 'F. Scott Fitzgerald' })
+        })
+            .then(respone => {
+                if (respone.ok) {
+                    return respone.json
+                }
+                throw new Erroe('book reviw failed')
+            })
+            .then(data => {
+                console.log('the book submitted successfully', data)
+            })
+            .catch(error => {
+                consol.log('error', error.message);
+            });
+        //STRING.REPEAT
+        const mood = "neutral";
+        console.log(`i feel ${mood.repeat(4)}`);
+        //CREATING ERROR
+        console.log(Error('your pass is too weak'));
+        console.log(new Error('MAKE NEW PASS'));
+        //USING ERROR TO CHECK PASSWORD 
+        function passwordStrength(password) {
+            if (passwordStrength.length < 8) {
+                throw new Error('the password is too weak');
+
+            } console.log('great password');
+        }
+        try {
+            passwordStrength('short');
+        } catch {
+            console.error(error.message);
+        }
+        //HANDLING WITH TRY CATCH
+        function capAllelements(arr) {
+            try {
+                arr.forEach((el, index, array) => {
+                    array[index] = el.toUpperCase();
+                });
+                return arr
+            } catch (error) {
+                console.log(error)
+            }
+        };
+        const Arrayi = ['apple', 'kiwi', 'khajoor'];
+        console.log(capAllelements(Arrayi));
+        //CURRYONG BAKING PROCESS
+        function bake(flavour) {
+            return function (topping) {
+                return (`the cookie is ${flavour} and ${topping}`)
+            }
+        }
+        const cookie = bake('chocolate');
+        console.log(cookie('nuts'));
+        console.log(cookie('peanuts'))
+        //HOISTING
+        console.log(hoist);
+        var hoist = a
+        console.log(hoist);
+        console.log(asd)
+        let asd = 10;
+        //function hoisting
+        hoist(2, 4);
+        function hoist(a, b) {
+            return a + b
+        };
+        //CALLBACK
+        function salting(dish, callback) {
+            console.log(`the salty ${dish}`)
+            callback()
+        }
+        salting('bhujiya', function newDish() {
+            console.log('dish served');
+        })
+        //BIG INT
+        const bigInt = 1234567890123456789012345678901234567890n;
+        const bigInt2 = 1234567890123456789012345678901234567890n;
+        let sum = bigInt + bigInt2;
+        console.log(sum);
+        //BOOLEAN
+        let res = 4 > 1
+        alert(res)
+        //CONCENTATION
+        const one = 'hello;'
+        const two = 'world';
+        let rejs = `${one}${two}`;
+        console.log(rejs)
+        //BACKTIKS
+        let song = 10
+        let namesi = "fight the youth"
+        let high = 9
+        let output = `${namesi} i will give it score${(song / high) * 100}%`;
+        //NUMBER AND STRING BUILT IN
+        let sui = "123"
+        let gui = Number(sui);
+        console.log(gui)
+        //.SORT FUNCTION ARRAY  COMPARASION
+        let fruito = ['banan', 'apple', 'kiwi', 'egg', 'jinger'];
+        fruito.sort();
+        console.log(fruito);
+        //.SORT FUNCTION ARRAY  COMPARASION
+        let fruitof = [10, 5, 100, 400, 34, 2];
+        fruitof.sort(function (a, b) {
+            return a - b;//0 to 9 values will print
+        });
+        console.log(fruitof);
+        //FILTERING ARRAYS 
+        let filteri = [1, 2, 4, 3, 6, 8, 9, 10];
+        let evenNum = filteri.filter(function (number) {//current number
+            return number % 2 === 0;
+        });
+        console.log(evenNum)
+        //hHANDLING FORM SUBMISSION
+        function checkForm(form) {
+            let name = form.name.value;
+            let age = form.age.value;
+            if (name === "" || age === "") {
+                alert('form is empty')
+                return false
+            }
+            if (age < 18) {
+                alert('the age is less')
+                return false
+            }
+            alert('sucess submission!');
+            return true
+        }
+        //OR OPERATOR 
+        let age = 19
+        let isage = true
+        if (age > 20 || age < 19) {
+            alert('fine age')
+        }
+        else if (age > 22 || age == 20 || isage) {
+            alert('youo are saved')
+        }
+        //OR checks left to right and if all value are false it gives last value
+        function getUsername(name) {
+            let username = name || "Guest";
+            console.log(`hello ${username} you are invited`);
+
+        }
+        getUsername("bae");
+        getUsername('')
+        //&& OPERATOR IF BOTH TOYS ARE WORKING
+        let x = 3;
+        // (x>0)&& alert("greater than zero");
+
+        (x > 0) && (x < 2) && alert("greater than zero");
+        function image(ur) {
+            if (url) {
+                console.log("load image", url)
+            }
+        }
+        let url = "https://chatgpt.com/";
+        url && image(url);
+        // 
+        let ag = 30
+        let id = true
+        let isMember = false
+        let result = age >= 20 && id && isMember
+        if (result) {
+            console.log("acess")
+        } else {
+            console.log("denied")
+        } let shoppingDone = false;
+        let childsAllowance;
+
+        // We don't need to explicitly specify 'shoppingDone === true'
+        if (shoppingDone) {
+            childsAllowance = 10;
+        } else {
+            childsAllowance = 5;
+        }
+        console.log(childsAllowance)
+        let year = prompt("the year in which js was made");
+        if (year == 2015) {
+            alert("you are right");
+        } else {
+            alert("you are so wrong")
+        }
+        //Switch case
+        let days = 3
+        switch (days) {
+            case 2:
+                console.log("its tuesday")
+                break;
+            case 3:
+                console.log("its wednesday")
+                break;
+            case 4:
+                console.log("its thursday")
+                break;
+            case 5:
+                console.log("its friday")
+                break;
+
+            default:
+                console.log("invalid day")
+                break;
+        }
+        //the odin project
+        const firstName = "john";
+        const lastName = "khan";
+        const birthYear = 2005;
+        const thisYear = 2024;
+        const greeting = `hey im ${firstName} my last name is ${lastName} my age is (${thisYear - birthYear})`;
+        console.log(greeting);
+        //trick
+        const nums = [1, 2, 3];
+        const numsi = [...nums, 4, 5];
+        console.log(numsi)
+        //function used for finding a largest number in  
+        let number = [3, 2, 6, 4, 8];
+        let largest = largestnum(number);
+        console.log(`the largest number is ${largest}`);
+
+        function largestnum(number) {
+            if (number.length === null) {
+                return ("the list is empty");
+            }
+            let largesti = number[0];
+            for (let i = 1; i < number.length; i++) {
+                if (numbers[i] > largesti) {
+                    largesti = number[i];
+                }
+
+            }
+            return largesti;
+        }
+        //function PARAMETERS
+        function add(a, b) {
+            return a - b;
+        }
+        let varo = add();
+        //BUILT IN FUNCTIONS
+        let vari = ["apple", "banana", "cherry"];
+        let ejs = vari.join()
+        console.log(ejs)
+        //default value "friend" will print if no argument is given
+        function greetj(name = "firend!") {
+            console.log(`hey ${name}`);
+        }
+        let jk = greetj("alice");
+        console.log(jk);
+        //agr user value nhi dega toh phir bhi function operate houga with def value
+        function login(name, email, pass = "default passwprd") {
+            return { name, email, pass }
+        }
+        let usero = login("john", "@john@gmail.com", "12322");
+        console.log(usero)
+        //function to find ming age using filter
+        let people = [{ name: 'Max', age: 22 }, { name: "ben", age: "12" }];
+        let movie = filterByAge(people, 21)
+        console.log(movie)
+
+        function filterByAge(people, minAge) {
+            return people.filter(humann => humann.age >= minAge);
+
+        }
+        //PRACTISING .MAP RETURN NEW ARRAY DO SMTHNG WITH EACH ARRAY
+        const numberss=[1,4,5,7,8,30,56,55,77,33]
+        let doubled=numberss.map(function(numberss){
+return numberss*2;
+        })
+        console.log(doubled)
+        //UPPERCASE
+        const phal=["apple","manfo","lemon"];
+        const resuk=phal.map(function(phal){
+            return phal.toUpperCase()
+        })
+        console.log(resuk);
+    </script>
+</body>
+
+</html>
